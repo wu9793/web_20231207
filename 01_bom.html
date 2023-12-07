@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS Bom</h2>
+    <button type="button" id="myBtn">btn</button>
+    <button type="button" id="closeBtn">closebtn</button>
+
+    <script>
+        // 1.綁定
+        let myBtn = document.getElementById('myBtn');
+        let closeBtn = document.getElementById('cliseBtn');
+
+        let screenHeight = screen.height;
+        let screenWidth = screen.wudth;
+        console.log('screenWidth',screenWidth);
+        console.log('screenHeight',screenHeight);
+
+        // 2.動作
+        // replace 無法回上頁
+        myBtn.addEventListener('click',function(){
+            //window.location.replace("https://www.w3schools.com");
+            
+            //window.location.assign("https://www.w3schools.com");
+            window.location.href = "https://www.w3schools.com";
+            
+        });
+
+        closeBtn.addEventListener('click',function(){
+            window.close();
+        })
+
+        
+    </script>
+</body>
+</html>
